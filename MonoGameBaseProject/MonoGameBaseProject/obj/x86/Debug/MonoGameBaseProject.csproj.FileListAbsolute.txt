@@ -25,3 +25,38 @@ C:\Users\Ludebe\Documents\Visual Studio 2012\Projects\MonoGameBaseProject\MonoGa
 C:\Users\Ludebe\Documents\Visual Studio 2012\Projects\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.pdb
 C:\Users\Ludebe\Documents\Visual Studio 2012\Projects\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fade.png
 C:\Users\Ludebe\Documents\Visual Studio 2012\Projects\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fonts\MyFont.xnb
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.exe
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.pdb
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fade.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fonts\MyFont.xnb
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\MonoGameBaseProject.exe
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\MonoGameBaseProject.pdb
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\MonoGame.Framework.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.MediaFoundation.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.XAudio2.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct3D11.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.DXGI.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct2D1.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.XInput.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.RawInput.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct3D9.dll
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\MonoGame.Framework.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.MediaFoundation.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.XAudio2.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct3D11.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.DXGI.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct2D1.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.XInput.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.RawInput.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct3D9.xml
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.csprojResolveAssemblyReference.cache
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Jugar.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Opciones.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Salir.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\SplashImages\SplashImage0.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\SplashImages\SplashImage1.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\FondoV2.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Logo.png
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Sounds\sound1.wma

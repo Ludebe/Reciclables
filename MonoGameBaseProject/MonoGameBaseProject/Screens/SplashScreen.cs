@@ -104,7 +104,6 @@ namespace MonoGameBaseProject.Screens
                 ChangeSplashImage();
             }
 
-
             oldMouseState = newMouseState;
         }
 

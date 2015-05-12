@@ -209,7 +209,7 @@ namespace MonoGameBaseProject
             }
 
             //Al final, lo agrega al diccionario.
-            effectDictionary.Add(effect.GetType().ToString().Replace("NoNamedGame.", String.Empty), (effect as ImageEffect));
+            effectDictionary.Add(effect.GetType().ToString().Replace("MonoGameBaseProject.", String.Empty), (effect as ImageEffect));
         }
 
         /* Se activa un efecto del diccionario de efectos

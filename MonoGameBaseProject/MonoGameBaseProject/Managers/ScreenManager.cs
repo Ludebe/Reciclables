@@ -25,7 +25,7 @@ namespace MonoGameBaseProject.Managers
         private ScreenManager()
         {
             //La primera pantalla del juego van a ser las imágenes de presentación (SplashScreens)
-            currentScreen = new SplashScreen();
+            currentScreen = new MenuScreen();
             oldScreen = currentScreen;
 
             dimensions.X = 800;

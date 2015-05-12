@@ -1,1 +1,2 @@
 C:\Users\Ludebe\Documents\Visual Studio 2012\Projects\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProjectContent\obj\PSM\MonoGameBaseContentProjectContent.contentprojResolveAssemblyReference.cache
+C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProjectContent\obj\PSM\MonoGameBaseContentProjectContent.contentprojResolveAssemblyReference.cache
