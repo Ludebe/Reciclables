@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Serialization;
 
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
@@ -33,6 +30,7 @@ namespace MonoGameBaseProject.Screens
         private String soundsPath;
         private SoundEffect selectionEffect;
         private bool playOnce = false;
+
         public MenuScreen()
         {
             base.Type = this.GetType();
@@ -75,14 +73,18 @@ namespace MonoGameBaseProject.Screens
             #endregion
 
             #region Sonidos
-            selectionEffect = Content.Load<SoundEffect>(soundsPath + "sound1");
+            //selectionEffect = Content.Load<SoundEffect>(soundsPath + "sound1");
             #endregion
 
         }
 
         public override void Update(GameTime gameTime)
         {
+            MouseControl();
 
+            foreach (Button b in buttons)
+                if (b.IsMouseIn() && Mouse.GetState().LeftButton == ButtonState.Pressed)
+                    b.OnClick();
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -102,13 +104,10 @@ namespace MonoGameBaseProject.Screens
 
         private void MouseControl()
         {
-            //Hace sonido al pasar el mouse por encima
-            foreach (Button button in buttons)
-            {
-                if (button.IsMouseIn())
-                    selectionEffect.Play();
-            }
-            
+            ////Hace sonido al pasar el mouse por encima
+            //foreach (Button button in buttons)
+            //{
+            //}
         }
 
     }
