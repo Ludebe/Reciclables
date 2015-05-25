@@ -7,9 +7,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Audio;
 
-using MonoGameBaseProject.Buttons;
+using EcoShoot.Buttons;
 
-namespace MonoGameBaseProject.Screens
+namespace EcoShoot.Screens
 {
     public class MenuScreen : Screen
     {

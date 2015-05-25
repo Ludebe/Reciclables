@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 #endregion
 
-namespace MonoGameBaseProject
+namespace EcoShoot
 {
 #if WINDOWS || LINUX
     /// <summary>

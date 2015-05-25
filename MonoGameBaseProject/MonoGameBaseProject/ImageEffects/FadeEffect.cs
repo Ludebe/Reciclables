@@ -5,9 +5,9 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 
-namespace MonoGameBaseProject.ImageEffects
+namespace EcoShoot.ImageEffects
 {
-    public class FadeEffect : MonoGameBaseProject.ImageEffects.ImageEffect
+    public class FadeEffect : EcoShoot.ImageEffects.ImageEffect
     {
         //Atributos
 

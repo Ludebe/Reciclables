@@ -5,7 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 
-namespace MonoGameBaseProject.ImageEffects
+namespace EcoShoot.ImageEffects
 {
     public class SpriteSheetEffect : ImageEffect
     {

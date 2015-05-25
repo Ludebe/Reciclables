@@ -10,9 +10,9 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-using MonoGameBaseProject.Managers;
+using EcoShoot.Managers;
 
-namespace MonoGameBaseProject.Screens
+namespace EcoShoot.Screens
 {
     /*Aclaración 1: Para que el juego cargue correctamente las
      * SplashImages se tienen que llamar como archivo 'SplashImageN',

@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameBaseProject", "MonoGameBaseProject\MonoGameBaseProject.csproj", "{EB011116-0A50-4D4F-8371-0CF5190ED7B5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoShoot", "MonoGameBaseProject\EcoShoot.csproj", "{EB011116-0A50-4D4F-8371-0CF5190ED7B5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonoGameBaseContentProject", "MonoGameBaseContentProject\MonoGameBaseContentProject\MonoGameBaseContentProject.csproj", "{A2E3DF93-69C5-4D23-BFD8-99CA24036DA1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoShootContentProject", "MonoGameBaseContentProject\MonoGameBaseContentProject\EcoShootContentProject.csproj", "{A2E3DF93-69C5-4D23-BFD8-99CA24036DA1}"
 EndProject
-Project("{96E2B04D-8817-42C6-938A-82C39BA4D311}") = "MonoGameBaseContentProjectContent", "MonoGameBaseContentProject\MonoGameBaseContentProjectContent\MonoGameBaseContentProjectContent.contentproj", "{98B19E00-1937-47B1-8CCB-51F5FB08C06E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EcoShootContentProjectContent", "MonoGameBaseContentProject\MonoGameBaseContentProjectContent\EcoShootContentProjectContent.contentproj", "{98B19E00-1937-47B1-8CCB-51F5FB08C06E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

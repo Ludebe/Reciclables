@@ -8,9 +8,9 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
-using MonoGameBaseProject.Screens;
+using EcoShoot.Screens;
 
-namespace MonoGameBaseProject.Managers
+namespace EcoShoot.Managers
 {
     public class ScreenManager
     {
@@ -82,7 +82,7 @@ namespace MonoGameBaseProject.Managers
 
         public void ChangeScreen(String screenName)
         {
-            currentScreen = (Screen)Activator.CreateInstance(Type.GetType("MonoGameBaseProject.Screens." + screenName));
+            currentScreen = (Screen)Activator.CreateInstance(Type.GetType("EcoShoot.Screens." + screenName));
             isTransitioning = true;
         }
 

@@ -6,9 +6,9 @@ using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Storage;
 
-using MonoGameBaseProject.Managers;
+using EcoShoot.Managers;
 
-namespace MonoGameBaseProject
+namespace EcoShoot
 {
     public class Game1 : Game
     {

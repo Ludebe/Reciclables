@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Microsoft.Xna.Framework;
 
-namespace MonoGameBaseProject.Managers
+namespace EcoShoot.Managers
 {
     public class CameraManager
     {

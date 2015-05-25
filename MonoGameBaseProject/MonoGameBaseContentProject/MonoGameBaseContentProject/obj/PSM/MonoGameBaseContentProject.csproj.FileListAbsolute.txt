@@ -6,3 +6,7 @@ C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBas
 C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\MonoGameBaseContentProject.csprojResolveAssemblyReference.cache
 C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Sebastián\Documents\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\IgnoreMe.dll
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\bin\PSM\IgnoreMe.dll
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\MonoGameBaseContentProject.csprojResolveAssemblyReference.cache
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\IgnoreMe.dll

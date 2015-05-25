@@ -5,7 +5,7 @@ using System.Text;
 
 using Microsoft.Xna.Framework;
 
-namespace MonoGameBaseProject.Screens
+namespace EcoShoot.Screens
 {
     class Objeto
     {

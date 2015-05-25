@@ -5,7 +5,7 @@ using System.Text;
 using System.Xml.Serialization;
 using System.IO;
 
-namespace MonoGameBaseProject.Managers
+namespace EcoShoot.Managers
 {
     public class XmlManager<T>
     {

@@ -8,7 +8,7 @@
     <ProjectGuid>{EB011116-0A50-4D4F-8371-0CF5190ED7B5}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MonoGameBaseProject</RootNamespace>
+    <RootNamespace>EcoShoot</RootNamespace>
     <AssemblyName>MonoGameBaseProject</AssemblyName>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -35,6 +35,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Basura.cs" />
     <Compile Include="Buttons\Button.cs" />
     <Compile Include="Buttons\ButtonJugar.cs" />
     <Compile Include="Buttons\ButtonSalir.cs" />
@@ -64,6 +65,30 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\Basura\Banana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Botella.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Botella_Vidrio.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Carne.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Carton.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Huevo.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Lata.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Basura\Manzana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Content\Fade.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

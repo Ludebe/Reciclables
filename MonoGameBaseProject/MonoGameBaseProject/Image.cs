@@ -9,10 +9,10 @@ using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
-using MonoGameBaseProject.Managers;
-using MonoGameBaseProject.ImageEffects;
+using EcoShoot.Managers;
+using EcoShoot.ImageEffects;
 
-namespace MonoGameBaseProject
+namespace EcoShoot
 {
     public class Image
     {
