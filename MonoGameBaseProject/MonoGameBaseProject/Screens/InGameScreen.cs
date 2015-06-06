@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
@@ -14,17 +15,20 @@ namespace EcoShoot.Screens
     public class InGameScreen : Screen
     {
         //Atributos
-        SpriteFont myFont;
+        SpriteFont myFont, nivelFont, resultadoFont;
+        Texture2D backgroundImage;
         Basura[] basuras;
         Basura basuraOnScreen;
         Int32 reciclablesAcertados, noReciclablesAcertados, reciclablesFallados, noReciclablesFallados, total, totalMax;
+        SoundEffect failSound;
+        SoundEffect winSound;
         Boolean fin, gana;
 
         public InGameScreen()
         {
             reciclablesAcertados = noReciclablesAcertados =
                 reciclablesFallados = noReciclablesFallados = total = 0;
-            totalMax = 30;
+            totalMax = 1;
             fin = false;
             basuras = new Basura[8];
             String texturePath;
@@ -58,6 +62,10 @@ namespace EcoShoot.Screens
         public override void LoadContent(ContentManager Content)
         {
             myFont = Content.Load<SpriteFont>("Fonts//MyFont");
+            nivelFont = Content.Load<SpriteFont>("Fonts//NivelFont");
+            resultadoFont = Content.Load<SpriteFont>("Fonts//ResultadoFont");
+
+            backgroundImage = Content.Load<Texture2D>("InGameScreen//Background");
 
             Random r = new Random();
             Vector2 position = new Vector2();
@@ -71,6 +79,10 @@ namespace EcoShoot.Screens
 
                 basuras[i].Position = position;
             }
+
+            //Se cargan los sonidos
+            failSound = Content.Load<SoundEffect>("Sounds//FailSound");
+            winSound = Content.Load<SoundEffect>("Sounds//WinSound");
 
             //Se asigna una basura random
             basuraOnScreen = GetRandomBasura();
@@ -89,11 +101,17 @@ namespace EcoShoot.Screens
                     {
                         //y acertó
                         if (basuraOnScreen.Acertado)
+                        {
                             reciclablesAcertados += 1;
+                            AudioManager.Instance.PlaySound(winSound);
+                        }
 
                         //y falló
                         else
+                        {
                             reciclablesFallados += 1;
+                            AudioManager.Instance.PlaySound(failSound);
+                        }
                     }
 
                     //Si no era reciclable
@@ -101,11 +119,17 @@ namespace EcoShoot.Screens
                     {
                         //y acertó
                         if (basuraOnScreen.Acertado)
+                        {
                             noReciclablesAcertados += 1;
+                            AudioManager.Instance.PlaySound(winSound);
+                        }
 
                             //y falló
                         else
+                        {
                             noReciclablesFallados += 1;
+                            AudioManager.Instance.PlaySound(failSound);
+                        }
                     }
 
                     //Crea una nueva basura para la pantalla
@@ -117,29 +141,54 @@ namespace EcoShoot.Screens
             }
 
             if (fin)
-                GanaOPierde();
+            {
+                Gana();
+
+                //Para volver a jugar
+                if (InputManager.Instance.KeyPressed(Microsoft.Xna.Framework.Input.Keys.R))
+                    VolverAJugar();
+            }
         }
 
         public override void Draw(SpriteBatch spriteBatch)
         {
+            spriteBatch.Draw(backgroundImage, Vector2.Zero, Color.White);
+
+            basuraOnScreen.Draw(spriteBatch);
+
             spriteBatch.DrawString(myFont, reciclablesAcertados + "/" + (reciclablesAcertados + reciclablesFallados).ToString(),
-                new Vector2(20, 20), Color.DarkGreen);
+                new Vector2(20, 45), Color.DarkGreen);
 
             spriteBatch.DrawString(myFont, noReciclablesAcertados + "/" + (noReciclablesAcertados + noReciclablesFallados).ToString(),
-                new Vector2(ScreenManager.Instance.dimensions.X - 60, 20), Color.DarkGray);
+                new Vector2(ScreenManager.Instance.dimensions.X - 60, 45), Color.DarkRed);
 
-            spriteBatch.DrawString(myFont, total.ToString(), new Vector2(ScreenManager.Instance.dimensions.X/2, 20), Color.WhiteSmoke);
+            spriteBatch.DrawString(nivelFont, total.ToString(), new Vector2(ScreenManager.Instance.dimensions.X / 2 - 30, 20), Color.WhiteSmoke);
 
             if (fin)
             {
                 if (gana)
-                    spriteBatch.DrawString(myFont, "GANASTE!", new Vector2(ScreenManager.Instance.dimensions.X / 2 - 50, ScreenManager.Instance.dimensions.Y / 2), Color.DarkGreen);
+                {
+                    String a = "GANASTE!";
+                    spriteBatch.DrawString(resultadoFont, a, new Vector2(ScreenManager.Instance.dimensions.X/2 - resultadoFont.MeasureString(a).X/2, ScreenManager.Instance.dimensions.Y / 4), Color.DarkGreen);
+                    a = ((noReciclablesAcertados + reciclablesAcertados) * 100) / (noReciclablesAcertados + reciclablesAcertados + noReciclablesFallados + reciclablesFallados) + "% Acertado";
+                    spriteBatch.DrawString(resultadoFont, a,
+                    new Vector2(ScreenManager.Instance.dimensions.X / 2 - resultadoFont.MeasureString(a).X / 2, ScreenManager.Instance.dimensions.Y / 4 + resultadoFont.MeasureString("GANASTE!").Y), Color.DarkGreen);
+                }
 
                 else
-                    spriteBatch.DrawString(myFont, "PERDISTE...", new Vector2(ScreenManager.Instance.dimensions.X / 2 - 50, ScreenManager.Instance.dimensions.Y/2), Color.DarkRed);
-            }
+                {
+                    String a = "PERDISTE!";
+                    spriteBatch.DrawString(resultadoFont, a, new Vector2(ScreenManager.Instance.dimensions.X / 2 - resultadoFont.MeasureString(a).X / 2, ScreenManager.Instance.dimensions.Y / 4), Color.DarkRed);
+                    a = ((noReciclablesAcertados + reciclablesAcertados) * 100) / (noReciclablesAcertados + reciclablesAcertados + noReciclablesFallados + reciclablesFallados) + "% Acertado";
+                    spriteBatch.DrawString(resultadoFont, a,
+                    new Vector2(ScreenManager.Instance.dimensions.X / 2 - resultadoFont.MeasureString(a).X / 2, ScreenManager.Instance.dimensions.Y / 4 + resultadoFont.MeasureString("PERDISTE!").Y), Color.DarkRed);
+                }
 
-            basuraOnScreen.Draw(spriteBatch);
+                //Jugar de nuevo
+                String b = "Para jugar de nuevo presiona R";
+                spriteBatch.DrawString(myFont, b, new Vector2(5, ScreenManager.Instance.dimensions.Y - myFont.MeasureString(b).Y), Color.White);
+                
+            }
         }
 
         /* Devuelve una basura random desde el array basuras
@@ -173,17 +222,24 @@ namespace EcoShoot.Screens
 
         /* Determina si el jugador gana o pierde
          * */
-        void GanaOPierde()
+        void Gana()
         {
-            Int32 totalAcertado, totalFallado;
-            totalAcertado = reciclablesAcertados + noReciclablesAcertados;
-            totalFallado = reciclablesFallados + noReciclablesFallados;
+            int porcentajeAcertado = ((noReciclablesAcertados + reciclablesAcertados) * 100) / 
+                (noReciclablesAcertados + reciclablesAcertados + noReciclablesFallados + reciclablesFallados);
 
-            if(totalAcertado * 3 > totalFallado)
+            if (porcentajeAcertado >= 50)
                 gana = true;
 
             else
                 gana = false;
+        }
+
+        void VolverAJugar()
+        {
+            reciclablesAcertados = noReciclablesAcertados = reciclablesFallados = 
+                noReciclablesFallados = total = 0;
+            gana = false;
+            fin = false;
         }
     }
 }

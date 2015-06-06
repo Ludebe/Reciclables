@@ -12,7 +12,6 @@ C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\Mon
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Logo.png
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Opciones.png
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\MenuScreen\Salir.png
-C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Sounds\sound1.wma
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\SplashImages\SplashImage0.png
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\SplashImages\SplashImage1.png
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fonts\MyFont.xnb
@@ -40,3 +39,11 @@ C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\Mon
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\SharpDX.Direct3D9.xml
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.exe
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\MonoGameBaseProject.pdb
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\obj\x86\Debug\EcoShoot.csprojResolveAssemblyReference.cache
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Sounds\FailSound.xnb
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Sounds\WinSound.xnb
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Sounds\MouseInSound.xnb
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\InGameScreen\Background.jpg
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\InstructionsScreen\Background.jpg
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fonts\NivelFont.xnb
+C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseProject\bin\Windows\Debug\Content\Fonts\ResultadoFont.xnb

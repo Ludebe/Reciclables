@@ -8,11 +8,15 @@ using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 
+using EcoShoot.Managers;
+
 namespace EcoShoot.Buttons
 {
     class ButtonSalir : Button
     {
-        private String texturePath;
+        String texturePath;
+        MouseState oldMouseState;
+        MouseState newMouseState;
 
         public ButtonSalir(String texturePath)
             : base(texturePath)
@@ -38,8 +42,11 @@ namespace EcoShoot.Buttons
 
         public override void Update(GameTime gameTime)
         {
+            oldMouseState = newMouseState;
+            newMouseState = Mouse.GetState();
+
             //Evento click
-            if (IsMouseIn() && Mouse.GetState().LeftButton == ButtonState.Pressed)
+            if (IsMouseIn() && InputManager.Instance.LeftMouseButtonPressed())
                 OnClick();
         }
 
@@ -52,6 +59,20 @@ namespace EcoShoot.Buttons
         {
             if (Mouse.GetState().X >= position.X && Mouse.GetState().Y >= position.Y &&
         Mouse.GetState().X <= position.X + texture.Width && Mouse.GetState().Y <= position.Y + texture.Height)
+                return true;
+
+            else
+                return false;
+        }
+
+        public override Boolean MouseEntered()
+        {
+            //Si el mouse antes no estaba sobre el botón y ahora sí
+            if (!(oldMouseState.X >= position.X && oldMouseState.Y >= position.Y &&
+                    oldMouseState.X <= position.X + texture.Width && oldMouseState.Y <= position.Y + texture.Height)
+                    &&
+                    newMouseState.X >= position.X && newMouseState.Y >= position.Y &&
+                    newMouseState.X <= position.X + texture.Width && newMouseState.Y <= position.Y + texture.Height)
                 return true;
 
             else

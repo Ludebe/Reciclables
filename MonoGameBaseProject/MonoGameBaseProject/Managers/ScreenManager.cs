@@ -25,7 +25,7 @@ namespace EcoShoot.Managers
         private ScreenManager()
         {
             //La primera pantalla del juego van a ser las imágenes de presentación (SplashScreens)
-            currentScreen = new MenuScreen();
+            currentScreen = new SplashScreen();
             oldScreen = currentScreen;
 
             dimensions.X = 800;
@@ -56,17 +56,8 @@ namespace EcoShoot.Managers
 
         public void Update(GameTime gameTime)
         {
-            //Primero:
-            InputManager.Instance.Update();
-
             currentScreen.Update(gameTime);            
             Transition(gameTime);
-
-            //FPS
-            FPSCounterManager.Instance.Update(gameTime);
-
-            //Camera
-            CameraManager.Instance.Update(gameTime);
         }
 
         public void Draw(SpriteBatch spriteBatch)

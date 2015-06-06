@@ -63,6 +63,7 @@ namespace EcoShoot
             spriteBatch = new SpriteBatch(GraphicsDevice);
 
             ScreenManager.Instance.LoadContent(Content);
+            AudioManager.Instance.LoadContent(Content);
         }
 
         /* Sirve para disposear contenido.
@@ -77,7 +78,9 @@ namespace EcoShoot
          * */
         protected override void Update(GameTime gameTime)
         {
+            InputManager.Instance.Update();
             ScreenManager.Instance.Update(gameTime);
+            FPSCounterManager.Instance.Update(gameTime);            
             base.Update(gameTime);
         }
 
@@ -95,9 +98,9 @@ namespace EcoShoot
             GraphicsDevice.Clear(Color.CornflowerBlue);
 
             //Ahora dibuja el área de la CameraManager
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend,
-                null, null, null, null, CameraManager.Instance.ViewMatrix);
+            spriteBatch.Begin();
             ScreenManager.Instance.Draw(spriteBatch);
+            FPSCounterManager.Instance.Draw(spriteBatch);
             spriteBatch.End();
 
             base.Draw(gameTime);

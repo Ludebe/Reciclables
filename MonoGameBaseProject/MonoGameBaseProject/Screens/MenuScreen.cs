@@ -15,21 +15,20 @@ namespace EcoShoot.Screens
     {
 
         //Imágenes del menú
-        private String imagesPath;
-        private Image logoImage;
-        private Image backgroundImage;
+        String imagesPath;
+        Image logoImage;
+        Image backgroundImage;
         //Lista de drawings
-        private List<Image> drawings;
+        List<Image> drawings;
 
         //Botones del menú
-        private ButtonJugar buttonJugar;
-        private ButtonSalir buttonSalir;
-        private List<Button> buttons;
+        ButtonJugar buttonJugar;
+        ButtonOpciones buttonOpciones;
+        ButtonSalir buttonSalir;
+        List<Button> buttons;
 
         //Sonidos
-        private String soundsPath;
-        private SoundEffect selectionEffect;
-        private bool playOnce = false;
+        SoundEffect mouseOnSound;
 
         public MenuScreen()
         {
@@ -37,7 +36,6 @@ namespace EcoShoot.Screens
             drawings = new List<Image>();
             buttons = new List<Button>();
             imagesPath = "MenuScreen/";
-            soundsPath = "Sounds/";
             //Inicializo las imágenes
             logoImage = new Image();
             backgroundImage = new Image();
@@ -64,27 +62,26 @@ namespace EcoShoot.Screens
 
             #region Botones
             int espacioEntreBotones = 15;
-            buttonJugar = new ButtonJugar(imagesPath + "Jugar", new Vector2(Managers.ScreenManager.Instance.dimensions.X / 3 + 15, Managers.ScreenManager.Instance.dimensions.Y / 2));
+            buttonJugar = new ButtonJugar(imagesPath + "Jugar", new Vector2(Managers.ScreenManager.Instance.dimensions.X / 3, Managers.ScreenManager.Instance.dimensions.Y / 2));
             buttonJugar.LoadContent(Content);
-            buttonSalir = new ButtonSalir(imagesPath + "Salir", new Vector2(Managers.ScreenManager.Instance.dimensions.X / 3 + 15, buttonJugar.position.Y + buttonJugar.texture.Height + espacioEntreBotones));
+            buttonOpciones = new ButtonOpciones(imagesPath + "Opciones", new Vector2(Managers.ScreenManager.Instance.dimensions.X / 3, buttonJugar.position.Y + buttonJugar.texture.Height + espacioEntreBotones));
+            buttonOpciones.LoadContent(Content);
+            buttonSalir = new ButtonSalir(imagesPath + "Salir", new Vector2(Managers.ScreenManager.Instance.dimensions.X / 3, buttonOpciones.position.Y + buttonOpciones.texture.Height + espacioEntreBotones));
             buttonSalir.LoadContent(Content);
             buttons.Add(buttonJugar);
+            buttons.Add(buttonOpciones);
             buttons.Add(buttonSalir);
             #endregion
 
             #region Sonidos
-            //selectionEffect = Content.Load<SoundEffect>(soundsPath + "sound1");
+            mouseOnSound = Content.Load<SoundEffect>("Sounds//MouseInSound");
             #endregion
 
         }
 
         public override void Update(GameTime gameTime)
         {
-            MouseControl();
-
-            foreach (Button b in buttons)
-                if (b.IsMouseIn() && Mouse.GetState().LeftButton == ButtonState.Pressed)
-                    b.OnClick();
+            MouseControl(gameTime);
         }
 
         public override void Draw(SpriteBatch spriteBatch)
@@ -97,18 +94,20 @@ namespace EcoShoot.Screens
             //Dibujo botones
             foreach (Button button in buttons)
                 button.Draw(spriteBatch);
-            //Sonido
-            MouseControl();
-
         }
 
-        private void MouseControl()
+        private void MouseControl(GameTime gameTime)
         {
             ////Hace sonido al pasar el mouse por encima
-            //foreach (Button button in buttons)
-            //{
-            //}
-        }
+            foreach (Button button in buttons)
+            {
+                button.Update(gameTime);
+                if(button.MouseEntered())
+                    EcoShoot.Managers.AudioManager.Instance.PlaySound(mouseOnSound);
 
+                if (button.IsMouseIn() && Mouse.GetState().LeftButton == ButtonState.Pressed)
+                    button.OnClick();
+            }
+        }
     }
 }

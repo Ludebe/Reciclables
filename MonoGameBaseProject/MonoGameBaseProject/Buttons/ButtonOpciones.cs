@@ -12,20 +12,20 @@ using EcoShoot.Managers;
 
 namespace EcoShoot.Buttons
 {
-    class ButtonJugar : Button
+    class ButtonOpciones : Button
     {
         String texturePath;
         MouseState oldMouseState;
         MouseState newMouseState;
 
-        public ButtonJugar(String texturePath)
+        public ButtonOpciones(String texturePath)
             : base(texturePath)
         {
             this.texturePath = texturePath;
             this.position = Vector2.Zero;
         }
 
-        public ButtonJugar(String texturePath, Vector2 position)
+        public ButtonOpciones(String texturePath, Vector2 position)
             : base(texturePath, position)
         {
             this.texturePath = texturePath;
@@ -78,7 +78,7 @@ namespace EcoShoot.Buttons
 
         public override void OnClick()
         {
-            Managers.ScreenManager.Instance.ChangeScreen("InstructionsScreen");
+            Managers.ScreenManager.Instance.ChangeScreen("InGameScreen");
         }
     }
 }

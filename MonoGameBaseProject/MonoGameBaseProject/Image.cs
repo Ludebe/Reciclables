@@ -219,7 +219,7 @@ namespace EcoShoot
             //Activa los que estén el el String effects. (Por ejemplo, en la clase SplashScreen
             //se crea la imagen, y luego se le setea effects = "ImageEffects.FadeEffect". 
             //Si "ImageEffects.FadeEffect está en el diccionario, lo activa.)
-            effects = "ImageEffects." + effects;
+            effects = "EcoShoot." + effects;
             if (effectDictionary.ContainsKey(effects))
             {
                 effectDictionary[effects].isActive = true;
