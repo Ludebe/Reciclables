@@ -8,15 +8,15 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>PSM</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProjectContent\</RootDirectory>
-      <LoggerRootDirectory>C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\</LoggerRootDirectory>
-      <IntermediateDirectory>C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\</IntermediateDirectory>
-      <OutputDirectory>C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\bin\PSM\Content\</OutputDirectory>
+      <RootDirectory>D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProjectContent\</RootDirectory>
+      <LoggerRootDirectory>D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\</LoggerRootDirectory>
+      <IntermediateDirectory>D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\</IntermediateDirectory>
+      <OutputDirectory>D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\bin\PSM\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2015-01-19T12:02:48.5798685-03:00</Value>
+        <Value>2015-03-26T00:51:35.527108-03:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

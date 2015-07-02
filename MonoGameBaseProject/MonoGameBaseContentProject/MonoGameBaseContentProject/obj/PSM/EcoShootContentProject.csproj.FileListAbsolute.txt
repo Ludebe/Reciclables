@@ -2,3 +2,7 @@ C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\Mon
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\EcoShootContentProject.csprojResolveAssemblyReference.cache
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
 C:\Users\Ludebe\Documents\GitHub\Reciclables\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\IgnoreMe.dll
+D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\bin\PSM\IgnoreMe.dll
+D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\EcoShootContentProject.csprojResolveAssemblyReference.cache
+D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\Microsoft.Xna.Framework.RuntimeProfile.txt
+D:\Mis Cosas\Mis documentos\GitHub\Reciclables\MonoGameBaseProject\MonoGameBaseContentProject\MonoGameBaseContentProject\obj\PSM\IgnoreMe.dll

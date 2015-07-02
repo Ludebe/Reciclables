@@ -28,7 +28,7 @@ namespace EcoShoot.Screens
         {
             reciclablesAcertados = noReciclablesAcertados =
                 reciclablesFallados = noReciclablesFallados = total = 0;
-            totalMax = 1;
+            totalMax = 30;
             fin = false;
             basuras = new Basura[8];
             String texturePath;
@@ -157,10 +157,10 @@ namespace EcoShoot.Screens
             basuraOnScreen.Draw(spriteBatch);
 
             spriteBatch.DrawString(myFont, reciclablesAcertados + "/" + (reciclablesAcertados + reciclablesFallados).ToString(),
-                new Vector2(20, 45), Color.DarkGreen);
+                new Vector2(20, 45), Color.White);
 
             spriteBatch.DrawString(myFont, noReciclablesAcertados + "/" + (noReciclablesAcertados + noReciclablesFallados).ToString(),
-                new Vector2(ScreenManager.Instance.dimensions.X - 60, 45), Color.DarkRed);
+                new Vector2(ScreenManager.Instance.dimensions.X - 60, 45), Color.White);
 
             spriteBatch.DrawString(nivelFont, total.ToString(), new Vector2(ScreenManager.Instance.dimensions.X / 2 - 30, 20), Color.WhiteSmoke);
 
@@ -243,3 +243,5 @@ namespace EcoShoot.Screens
         }
     }
 }
+        
+        
